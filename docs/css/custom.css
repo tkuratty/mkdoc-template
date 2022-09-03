@@ -1,0 +1,21 @@
+body {
+  font-family: "Noto Sans JP";
+}
+
+.md-typeset > ::before {
+  font-family: "FontAwesome";
+  margin-right: 0.3em;
+  display: inline-block !important;
+}
+
+.md-typeset h1::before {
+  content: "\f02d " !important;
+}
+
+.md-typeset h2::before {
+  content: "\f0a9" !important;
+}
+
+.md-typeset h3::before {
+  content: "\f061" !important;
+}

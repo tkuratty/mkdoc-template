@@ -1,5 +1,7 @@
 # MkDocs Template
 
+Several extensions have already been set up.
+
 ## Setup
 
 ```
@@ -10,7 +12,10 @@ mkdocs serve
 
 ```
 
-for mac $ source .venv/bin/activate
+for mac to activate venv.  
+```
+source .venv/bin/activate
+```
 
 ## Recommended extensions for VSCode
 

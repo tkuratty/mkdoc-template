@@ -41,6 +41,7 @@ markdown_extensions:
   - fontawesome_markdown
   - attr_list
   - md_in_html
+  - tables
 
 extra_css:
   - "//fonts.googleapis.com/earlyaccess/notosansjp.css"
@@ -69,6 +70,10 @@ plugins:
       nav_translations:
         ja:
           Home: ホーム
+          Sub Cat1: サブカテゴリ1
 
 nav:
   - Home: index.md
+  - Sub Cat1:
+      - Sub Home: sub-cat1/index.md
+      - MkDocs Sample: sub-cat1/sample.md

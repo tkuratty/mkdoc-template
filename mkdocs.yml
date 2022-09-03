@@ -1,0 +1,74 @@
+site_name: SET YOUR SITE NAME
+# site_url:
+# site_dir: site
+# repo_name: Set Repo Name
+# repo_url:
+use_directory_urls: false
+copyright: "Copyright (c) 2022 -  Ratty"
+
+docs_dir: "docs"
+
+theme:
+  name: material
+  language: en
+  # logo: images/
+  # favicon: images/
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.indexes
+  palette:
+    primary: indigo
+    accent: red
+
+markdown_extensions:
+  - toc:
+      toc_depth: 2
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.critic
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - mdx_truly_sane_lists:
+      nested_indent: 2
+  - fontawesome_markdown
+  - attr_list
+  - md_in_html
+
+extra_css:
+  - "//fonts.googleapis.com/earlyaccess/notosansjp.css"
+  - "//fonts.googleapis.com/css?family=Open+Sans:600,800"
+  - "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+  - "css/custom.css"
+
+extra:
+  search:
+    language: "ja"
+  font:
+    text: "Noto Sans JP"
+    code: "Consolas"
+
+plugins:
+  - search
+  - i18n:
+      default_language: en
+      languages:
+        en:
+          name: English
+          build: true
+        ja:
+          name: 日本語
+          build: true
+      nav_translations:
+        ja:
+          Home: ホーム
+
+nav:
+  - Home: index.md

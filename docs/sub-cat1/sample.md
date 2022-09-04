@@ -1,6 +1,6 @@
 # MkDocs Sample
 
-## Admonitions
+## Admonitions & Details
 
 !!! Info
     Infomation
@@ -11,9 +11,14 @@
 ??? Info
     Can be folded
 
+???+ note "Open styled details"
+
+    ??? danger "Nested details!"
+        And more content again.
+
 ## Font Awesome
 
-:fa-external-link: [MkDocs](http://www.mkdocs.org/)  
+:fa-external-link: [MkDocs](http://www.mkdocs.org/){:target="_blank"}.  
 
 ## Codehilite
 
@@ -45,8 +50,55 @@ graph LR
 
 ## Tables
 
-| Method      | Description                          |
-| ----------- | ------------------------------------ |
-| `GET`       | :material-check:     Fetch resource  |
-| `PUT`       | :material-check-all: Update resource |
-| `DELETE`    | :material-close:     Delete resource |
+=== "Output"
+    | Method      | Description                          |
+    | ----------- | ------------------------------------ |
+    | `GET`       | :material-check:     Fetch resource  |
+    | `PUT`       | :material-check-all: Update resource |
+    | `DELETE`    | :material-close:     Delete resource |
+=== "Markdown"
+    ```
+    | Method      | Description                          |
+    | ----------- | ------------------------------------ |
+    | `GET`       | :material-check:     Fetch resource  |
+    | `PUT`       | :material-check-all: Update resource |
+    | `DELETE`    | :material-close:     Delete resource |
+    ```
+
+
+## Keys
+Reference is :fa-external-link: [here](https://facelessuser.github.io/pymdown-extensions/extensions/keys/){:target="_blank"}.  
+
+=== "Output"
+    ++ctrl+alt+delete++
+=== "Markdown"
+    ```
+    ++ctrl+alt+delete++
+    ```
+
+## Tabs
+=== "Output"
+
+    === "Tab 1"
+        Markdown **content**.
+
+        Multiple paragraphs.
+
+    === "Tab 2"
+        More Markdown **content**.
+
+        - list item a
+        - list item b
+=== "Markdown"
+    ``` md
+    === "Tab 1"
+        Markdown **content**.
+
+        Multiple paragraphs.
+
+    === "Tab 2"
+        More Markdown **content**.
+
+        - list item a
+        - list item b
+    ```

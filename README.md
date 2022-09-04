@@ -1,6 +1,7 @@
 # MkDocs Template
 
-Several extensions have already been set up.
+This is a ready to go template for MkDocs site.  
+Several extensions have already been set up.  
 
 ## Setup
 

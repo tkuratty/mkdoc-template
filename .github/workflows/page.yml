@@ -51,8 +51,8 @@ jobs:
           git rm -r --ignore-unmatch *
           cp -R ../site/* .
           touch .nojekyll
-          touch CNAME
-          echo your.domain.example.com > CNAME
+          # touch CNAME
+          # echo your.domain.example.com > CNAME
           git add --all
           git config --global user.name '${{github.actor}}'
           git config --global user.email '${{github.actor}}@users.norelpy.github.com'

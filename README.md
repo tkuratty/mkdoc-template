@@ -18,6 +18,13 @@ for mac to activate venv.
 source .venv/bin/activate
 ```
 
+## GitHub Actions
+This command does not work if you need to use a custom domain. 
+```
+mkdocs gh-deploy --force
+```
+Run a shell script instead of <gh-deploy> option for deploy pages in the page.yml.
+
 ## Recommended extensions for VSCode
 
 - Markdown All in One

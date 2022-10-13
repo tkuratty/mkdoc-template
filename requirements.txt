@@ -1,7 +1,0 @@
-mkdocs
-mkdocs-material
-pygments
-mdx-truly-sane-lists
-plantuml-markdown
-fontawesome_markdown
-mkdocs-static-i18n
